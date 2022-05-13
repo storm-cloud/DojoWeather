@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dojo Weather</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="DojoWeatherCSS.css">
+        <script defer src="DojoWeatherJS.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="navbar">
+
+                <div class="navcontent">
+
+                    <h1><a href="null">DojoWeather</a></h1>
+                
+                    <h2 class="location" onclick="loadingWeather()">Burbank</h2>
+    
+                    <h2 class="location" onclick="loadingWeather()">Chicago</h2>
+    
+                    <h2 class="location" onclick="loadingWeather()">Dallas</h2>
+
+                </div>
+
+            </div>
+
+            <div class="locationtemp">
+
+                <h1>San Jose</h1>
+
+                <h3>show temperature in 
+                    <select name="" id="option" onchange="changeTemp()">
+                        
+                        <option value="C°">C°</option>
+
+                        <option value="F°">F°</option>
+
+                    </select>
+                </h3>
+
+                
+
+            </div>
+
+            <div class="divider">
+
+            </div>
+
+            <div class="forecasts">
+
+                <div class="day">
+                    <h2>Today</h2>
+                    <img src="Images/some_rain.png" alt="" class="weathericon">
+                    <h3>some rain</h3>
+                    <div class="temps">
+                        <h2 class="num">24</h2><h2>°</h2>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h2 class="num">28</h2><h2>°</h2>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <h2>Tomorrow</h2>
+                    <img src="Images/some_sun.png" alt="" class="weathericon">
+                    <h3>some sun</h3>
+                    <div class="temps">
+                        <h2 class="num">27</h2><h2>°</h2>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h2 class="num">19</h2><h2>°</h2>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <h2>Friday</h2>
+                    <img src="Images/some_clouds.png" alt="" class="weathericon">
+                    <h3>some clouds</h3>
+                    <div class="temps">
+                        <h2 class="num">21</h2><h2>°</h2>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h2 class="num">16</h2><h2>°</h2>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <h2>Saturday</h2>
+                    <img src="Images/some_sun.png" alt="" class="weathericon">
+                    <h3>some sun</h3>
+                    <div class="temps">
+                        <h2 class="num">26</h2><h2>°</h2>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h2 class="num">21</h2><h2>°</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cookiepop" onclick="dismissCookie()">
+                <img src="Images/cookie.png" alt="">
+                <p>
+                    <h3>Stop! Cookie Time</h3>
+                    <p>We use cookies (sadly not the edibel ones) to personalize
+                        content and ads, to provide social media features and to
+                        analyse our traffic. <a href="null">Read more...</a>
+                    </p>
+                    <button id="acceptbutton">I Accept</button>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
